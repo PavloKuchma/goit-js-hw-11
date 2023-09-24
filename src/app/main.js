@@ -88,7 +88,7 @@ async function onEntry(entries) {
         if (pixabay.hasMoreImages()) {
           Notify.info("Looks like you've reached the end of search results.");
 
-          observer.unobserve(refs.infitity);
+          observer.unobserve(refs.infinity);
         }
       }
 
