@@ -1,16 +1,42 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Homework 9</title>
-    <link rel="stylesheet" href="css/common.css" />
+    <title>Page title</title>
+    <link rel="stylesheet" href="./sass/index.scss" />
+    <script type="module" src="./index.js"></script>
   </head>
   <body>
-    <ul>
-      <li><a href="01-color-switcher.html">Color switcher</a></li>
-      <li><a href="02-timer.html">Countdown timer</a></li>
-      <li><a href="03-promises.html">Promise generator</a></li>
-    </ul>
+    <div class="preloader">
+      <span class="loader"></span>
+    </div>
+
+    <div class="container">
+      <form class="search-form" id="search-form">
+        <div class="form__container">
+          <input
+            class="form__input"
+            type="text"
+            name="searchQuery"
+            autocomplete="off"
+            placeholder="Search images..."
+          />
+          <button class="form__btn" type="submit">
+            <svg class="form-btn_icon">
+              <use href="./images/search-icon.svg#icon-search"></use>
+            </svg>
+          </button>
+        </div>
+      </form>
+    </div>
+
+    <div class="gallery">
+      <!-- Картки зображень -->
+    </div>
+
+    <div class="infitity-scroll"></div>
+
+    </div>
   </body>
 </html>
